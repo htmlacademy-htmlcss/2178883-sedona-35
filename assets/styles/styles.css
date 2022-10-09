@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url(/assets/fonts/ptsans-400.woff) format("woff"),
+    url(/assets/fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(/assets/fonts/ptsans-700.woff) format("woff"),
+    url(/assets/fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.layout {
+  margin: 0 auto;
+  width: 1200px ;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.no-style-list {
+  list-style-type: none;
+}
+
+.link-pattern {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.lcurrent {
+  text-decoration: underline;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background: #756157;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn-small {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background: #756157;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.drop-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
+  background:transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.welcome {
+  background: url(/images/welcome-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advantages {
+  text-align: center;
+  color: #000000;
+}
+
+.bgadvcolor-one {
+  background: #82B3D3;
+  color: #ffffff;
+  background-size: 100% auto;
+
+}
+
+.bgadvcolor-two {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.bgadvcolor-three {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-search {
+  text-align: center;
+}
+
+.subscribe {
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  background: url(/images/subscribe-image.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.footer-contacts-address-phone  {
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+.header-catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.catalog-filter-style {
+  background: url(/images/catalog-form-background.png) 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.catalog-filter-group-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control-input-value-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.range-button {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.range {
+  width: 287px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.subscribe-button-favorite {
+  background: #7DB54F;
+  border-radius: 4px;
+}
+
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
+  line-height: 36px;
+  background: #82B3D3;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-show-more {
+  background: transparent;
+  border: none;
+}
+
+.rating-description {
+  width: 140px;
+  height: 37px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #F2F2F2;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
