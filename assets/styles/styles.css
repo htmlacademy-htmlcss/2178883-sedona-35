@@ -18,13 +18,13 @@
   font-display: fallback;
 }
 
-*, *::before *::after{
+html {
   box-sizing: border-box;
+  height: 100%;
 }
 
-html {
+*, *:before *:after {
   box-sizing: inherit;
-  height: 100%;
 }
 
 body {
