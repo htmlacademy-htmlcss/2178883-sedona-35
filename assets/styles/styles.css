@@ -889,7 +889,8 @@ body {
 
 .control-input-price::-webkit-outer-spin-button,
 .control-input-price::-webkit-inner-spin-button {
-  appearance: 0;
+  -webkit-appearance: 0;
+          appearance: 0;
   margin: 0;
 }
 
@@ -986,7 +987,8 @@ body {
   background-image: url("/assets/images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover,
