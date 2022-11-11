@@ -93,26 +93,30 @@ body {
   position: relative;
 }
 
+.navigation-user-item > .navigation-link {
+  color: #000000;
+  padding: 19px 12px 18px 13px;
+}
+
+.navigation-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-link:focus {
+  outline: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.15);
+}
+
 .navigation-link.link-pattern {
   margin-right: 32px;
 }
 
 .navigation-user {
   width: fit-content;
-}
-
-.navigation-user-item:nth-child(1) > .navigation-link {
-  background-image: url("/assets/images/header-icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 24px 17px 21px 24px;
-}
-
-.navigation-user-item:nth-child(2) > .navigation-link {
-  background-image: url("/assets/images/header-icons/favorite.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 23px 21px 20px 24px;
 }
 
 .favorite-index {
@@ -129,7 +133,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-5px, 1px);
+  transform: translate(-4px, 10px);
 }
 
 .navigation-item > .navigation-link-a {
@@ -168,6 +172,10 @@ body {
 
 .lcurrent {
   border-bottom: 2px solid #000000;
+}
+
+.navigation-link.lcurrent:hover {
+  color: #000000;
 }
 
 .btn {
@@ -308,6 +316,7 @@ body {
   background: url("/assets/images/welcome-image.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #000000;
   margin-bottom: 69px;
   min-height: 458px;
   position: relative;
@@ -367,6 +376,10 @@ body {
 
 .icon-container {
   padding: 77px 85px 81px;
+}
+
+.advantages-image {
+  background-color: #83b3d3;
 }
 
 .advantages-item-image {
@@ -466,6 +479,7 @@ body {
   background: url("/assets/images/subscribe-image.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #3f5e72;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -520,6 +534,11 @@ body {
 .field::placeholder {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
+}
+
+.field.modal-check-input::placeholder,
+.field.modal-age-input::placeholder {
+  font-weight: 700;
 }
 
 .subscribe-input {
@@ -721,6 +740,7 @@ body {
   background: url("/assets/images/catalog-form-background.jpg") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #3f5e72;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -917,6 +937,7 @@ body {
   position: absolute;
   background-color: #ffffff;
   height: 4px;
+  width: 226px;
 }
 
 .range-button {
@@ -1261,8 +1282,7 @@ body {
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 2;
 }
 
 .modal-container-close {
@@ -1270,10 +1290,11 @@ body {
 }
 
 .modal-window {
+  margin: auto;
   box-sizing: border-box;
   width: 717px;
   min-height: 576px;
-  border-radius: 50px;
+  border-radius: 30px;
   background: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1333,7 +1354,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 21px;
+  margin-top: 22px;
   margin-bottom: 0;
   position: relative;
   padding: 0;
@@ -1352,7 +1373,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 21px;
-  margin-left: 155px;
+  margin-left: 157px;
   margin-top: 4px;
 }
 
@@ -1361,7 +1382,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
-  margin-left: 155px;
+  margin-left: 157px;
   margin-top: 4px;
 }
 
@@ -1383,6 +1404,7 @@ body {
   height: 14px;
   position: absolute;
   padding: 0;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .plus-button {
@@ -1402,7 +1424,7 @@ body {
 }
 
 .modal-age-input[name="children-input"] + .plus-button {
-  left: 94%;
+  left: 95%;
   top: 50%;
   transform: translateY(-6px);
 }
@@ -1413,10 +1435,9 @@ body {
   transform: translate(3px, -7px);
 }
 
-.plus-minus-button:hover path,
-.plus-minus-button:focus path {
-  fill: #000000;
-  fill-opacity: 100%;
+.plus-minus-button:hover,
+.plus-minus-button:focus {
+  color: #000000;
 }
 
 .plus-minus-button:focus {
@@ -1426,14 +1447,13 @@ body {
   border-radius: 4px;
 }
 
-.plus-minus-button:active path {
-  fill: #000000;
-  fill-opacity: 0.2;
+.plus-minus-button:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .modal-check-input {
   width: 440px;
-  padding: 12px 24px;
+  padding: 12px 20px;
   box-sizing: border-box;
   position: relative;
 }
@@ -1448,15 +1468,11 @@ body {
   margin-right: 43px;
 }
 
-.modal-check-input::placeholder,
-.modal-age-input::placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
 .modal-button {
   width: 100%;
+  padding: 10px;
+  padding-top: 13px;
+  border-radius: 10px;
 }
 
 .calendar-icon {
@@ -1464,12 +1480,13 @@ body {
   height: 15px;
   background: url("/assets/images/calendar.svg");
   position: absolute;
-  right: 4%;
+  right: 22px;
   top: 23%;
 }
 
 .tooltip-toggle {
-  margin-left: 10px;
+  margin-left: 6px;
+  margin-bottom: 2px;
   box-sizing: border-box;
   width: 26px;
   height: 26px;
@@ -1490,7 +1507,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   width: 216px;
-  padding: 16px 22px;
+  padding: 18px 16px 20px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1500,7 +1517,7 @@ body {
 
 .tooltip-text::before {
   content: "";
-  width: 19px;
+  width: 15px;
   height: 18px;
   background: #333333;
   position: absolute;
